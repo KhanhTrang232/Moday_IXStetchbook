@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang's Interactive Sketchbook</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Point of Entry — current work in progress */
+    body.point-of-entry {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 34px 28px 50px;
+      background: #f7f3e8;
+      color: #26241C;
+      font-family: Georgia, serif;
+      line-height: 1.7;
+    }
+
+    .point-of-entry header {
+      border-bottom: 2px solid #26241C;
+      padding-bottom: 22px;
+      margin-bottom: 42px;
+    }
+
+    .point-of-entry .eyebrow {
+      margin: 0 0 8px;
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .point-of-entry h1 {
+      margin: 0 0 14px;
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1;
+      text-align: center;
+      letter-spacing: -2px;
+    }
+
+    .point-of-entry .intro {
+      max-width: 680px;
+      margin: 0 auto 30px;
+      text-align: center;
+      font-size: 19px;
+    }
+
+    .point-of-entry nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 9px;
+    }
+
+    .point-of-entry nav a {
+      display: inline-block;
+      padding: 7px 12px;
+      border: 1px solid #26241C;
+      text-decoration: none;
+      color: #26241C;
+      background: #fffdf6;
+      transition: background-color .2s, transform .2s;
+    }
+
+    .point-of-entry nav a:hover {
+      background: #e8e1c9;
+      transform: translateY(-2px);
+    }
+
+    .point-of-entry main {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 28px;
+    }
+
+    .point-of-entry .welcome,
+    .point-of-entry .site-map,
+    .point-of-entry .find {
+      border: 1px solid #26241C;
+      padding: 25px;
+      background: rgba(255,255,255,.45);
+    }
+
+    .point-of-entry .welcome {
+      grid-row: span 2;
+    }
+
+    .point-of-entry h2 {
+      margin: 0 0 14px;
+      font-size: 32px;
+    }
+
+    .point-of-entry h3 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      text-align: left;
+    }
+
+    .point-of-entry p {
+      margin: 0 0 16px;
+      font-size: 17px;
+      text-align: left;
+    }
+
+    .point-of-entry ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .point-of-entry li {
+      margin-bottom: 10px;
+    }
+
+    .point-of-entry footer {
+      margin-top: 42px;
+      padding-top: 18px;
+      border-top: 1px solid #26241C;
+      text-align: center;
+    }
+
+    .point-of-entry footer p {
+      text-align: center;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .point-of-entry .process-reflection {
+      margin-top: 42px;
+      padding-top: 26px;
+      border-top: 1px dashed #77705d;
+    }
+
+    @media (max-width: 700px) {
+      .point-of-entry main {
+        grid-template-columns: 1fr;
+      }
+
+      .point-of-entry .welcome {
+        grid-row: auto;
+      }
+
+      .point-of-entry {
+        padding: 24px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body class="point-of-entry">
+  
+  <header>
+    <p class="eyebrow">Interactive Sketchbook</p>
+    <h1>Welcome to My Website</h1>
+    <p class="intro">A growing collection of my class projects, ideas, experiments, and process.</p>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about/about.html">About</a>
+      <a href="hierarchy/hierarchy.html">Joplin, Wishing</a>
+      <a href="css_basics/css_basics.html">CSS Basics</a>
+      <a href="checkpoint_one.html">Checkpoint One</a>
+      <a href="box_model/box_model.html">Box Model</a>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="welcome">
+      <h2>Explore My Site</h2>
+
+    <p>
+      Welcome! This website is a collection of my work, interests
+      inspiration, and a little bit about me. Use the navigation above
+      to explore the different pages. 
+    </p>
+    
+    </section>
+
+    <section class="site-map">
+    <h3>Site Map</h3>
+    <p>Home connects to my About page, Joplin, Wishing page, CSS Basics practice, Checkpoint One process page, and Box Model practice.</p>
+
+    </section>
+
+    <section class="find">
+    <h3>What You Can Find Here</h3>
+    
+    <ul>
+      <li><strong>About:</strong> Learn more about me and why I am taking this class.</li>
+      <li><strong>Joplin, Wishing:</strong> A text hierarchy exercise using HTML headings and emphasis.</li>
+      <li><strong>CSS Basics:</strong> Practice with selectors, inheritance, specificity, cascade, and jump links.</li>
+      <li><strong>Checkpoint One:</strong> A living record of my website process and revisions.</li>
+      <li><strong>Box Model:</strong> Practice with the CSS box model, spacing, borders, backgrounds, and display properties.</li>
+    </ul>
+    </section>
+  </main>
+  
+  <footer>
+      <p>My Website</p>
+  </footer>
+  <section class="process-reflection">
+      <h2>Earlier Process Reflection</h2>
+      <p>
+        For this entry page, I focused on creating a simple structure that helps
+        visitors understand what they can find on my website. One idea from the
+        reading that I used is that information architecture is the structure
+        behind a website, while navigation helps visitors move through that
+        structure. I organized my website into four main pages: Home, About,
+        Inspiration, and Self Portrait. I put these pages in the navigation so
+        visitors can easily move between them.
+    </p>
+
+    <p>
+        I also created a simple site map before building the page. The sketch
+        helped me see how the pages connect and which page should be the main
+        entry point. I decided to keep the structure simple because my website
+        is still growing. The entry page introduces the site and gives visitors
+        a clear idea of what they can explore. I also used headings and sections
+        to create a basic visual hierarchy, with the main title first and
+        smaller sections underneath it.
+    </p>
+
+    <p>
+        One thing I am still thinking about is how the navigation might change
+        when I add more pages. If the website becomes larger, I may need to
+        organize the pages into categories instead of putting everything in one
+        navigation bar. For now, I think this simple structure makes the site
+        easy to understand and gives me a good starting point for future
+        revisions.
+    </p>
+</section>  
+</body>   
+</html>

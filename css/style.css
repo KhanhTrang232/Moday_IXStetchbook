@@ -1,0 +1,67 @@
+/* the * indicates universal styles, we will get into that later in the semester
+for now, you can leave these alone */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Css is how we add all things style, below there are two simple styles added
+go ahead and play with these, can you get the colors to change? What do you notice?
+ */
+
+body {
+    font-family:'EB Garamond';
+    color: #26241C;
+    background-color: #F2F0D8;
+    max-width: 900px;
+        margin: 0 auto;
+        padding: 50px;
+        font-family: Georgia, serif;
+        line-height: 1.7;
+        background-color: #f7f3e8;
+        color: #222;
+}
+ h1 {
+        text-align: center;
+        font-size: 55px;
+        line-height: 1.1;
+        margin-bottom: 40px;
+    }
+h2 {
+        font-size: 32px;
+        margin-top: 35px;
+    }
+h3 {
+        font-size: 26px;
+        text-align: right;
+        margin-top: 40px;
+    }
+ h4 {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+h5 {
+        font-size: 18px;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+ p {
+        font-size: 18px;
+        text-align: justify;
+        margin: 20px 0;
+    }
+hr {
+        margin: 35px 0;
+    }
+
+    em {
+        font-size: 20px;
+    }
+
+    strong {
+        font-size: 24px;
+    }
+</style>                        
+
