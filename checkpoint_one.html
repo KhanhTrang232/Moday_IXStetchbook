@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkpoint One - Interactive Sketchbook</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .sketchbook-note { border-left: 4px solid #26241C; padding: 14px 18px; margin: 24px 0; background: rgba(255,255,255,.35); }
+    .small-note { font-size: .9em; }
+    nav { margin-bottom: 30px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Checkpoint One</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about/about.html">About</a> |
+      <a href="hierarchy/hierarchy.html">Joplin, Wishing</a> |
+      <a href="css_basics/css_basics.html">CSS Basics</a> |
+      <a href="box_model/box_model.html">Box Model</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="small-note">This page is a living record of my Interactive Sketchbook. I will keep adding to it instead of deleting older ideas.</p>
+
+    <hr>
+
+    <section class="sketchbook-note">
+      <h2>September 7, 2026 — Early HTML and Hierarchy</h2>
+      <p>
+        I started building individual HTML pages before thinking about how they would become one larger website.
+        The Joplin, Wishing exercise helped me understand that headings are not only about making text look bigger.
+        Different heading levels create a structure that tells the reader which ideas are more important. I also used
+        strong and em to make certain words stand out. At this stage, each assignment felt like its own small website,
+        so I still need to think about how the pages can connect to each other.
+      </p>
+    </section>
+
+    <section class="sketchbook-note">
+      <h2>September 14, 2026 — About Page and Personal Content</h2>
+      <p>
+        The About page made me think more about what belongs on a personal website. I used headings, paragraphs, a
+        hyperlink, and an embedded video. The iframe was confusing at first because it included many attributes, but I
+        learned that the source tells the browser where the video comes from. I also started thinking about how the
+        content of each page should have a purpose instead of just filling space. I want the Interactive Sketchbook
+        to show both finished work and the process behind it.
+      </p>
+    </section>
+
+    <section class="sketchbook-note">
+      <h2>September 20, 2026 — Information Architecture and the Entry Page</h2>
+      <p>
+        I began thinking about the Interactive Sketchbook as one website instead of separate assignments. I made an
+        entry page and started considering the difference between information architecture and navigation. The folder
+        structure is becoming more important because the location of a file changes how I write relative paths.
+        I also noticed that a simple navigation system is easier to understand while the site is still small. As more
+        assignments are added, I may need to rethink how the navigation is organized.
+      </p>
+    </section>
+
+    <section class="sketchbook-note">
+      <h2>September 21, 2026 — CSS Basics and Connecting Pages</h2>
+      <p>
+        The CSS Basics exercise helped me understand that CSS can exist at different levels of a website. The
+        Interactive Sketchbook has a root stylesheet for shared styles, while CSS Basics has its own child stylesheet.
+        I practiced inheritance, selectors, specificity, the cascade, hover states, fonts, and jump links. One thing
+        I had to pay attention to was the relative path between a child page and the root page. When a page is moved
+        into a folder, a path such as <code>../index.html</code> may be necessary. This made me realize that folder
+        organization and code are connected. I still want to experiment with how much styling should be shared across
+        the whole site and how much should stay specific to one assignment.
+      </p>
+    </section>
+
+    <hr>
+
+    <section class="sketchbook-note">
+      <h2>September 28, 2026 — Revisiting the Point of Entry</h2>
+      <p>
+        When I first made my Point of Entry wireframe, I was mainly thinking about having a simple home page
+        with links to my other assignments. Now that the Interactive Sketchbook has more pages, the original plan
+        feels too simple. I decided to keep the basic idea of a clear home page, but I changed the design so the
+        page gives visitors more information about what the site is and where they can go next.
+      </p>
+      <p>
+        I kept my name, the title of the Interactive Sketchbook, a short introduction, and links to the main pages.
+        I did not want to put every detail from my assignments on the homepage because that could make the Point
+        of Entry feel crowded. Instead, I used sections to separate the welcome message, the site map, and the
+        different things visitors can find. I also changed the navigation so it looks more like part of the design
+        instead of a list of links added at the top.
+      </p>
+      <p>
+        For the CSS, I experimented with spacing, borders, backgrounds, typography, hover states, and a simple
+        two-column layout. The page feels more organized now, but the navigation is still something I want to
+        continue improving. As more assignments are added, I may need to decide which pages should stay in the main
+        navigation and which ones could be grouped into sections. I also think the older pages will need some redesign
+        so the whole sketchbook feels connected while still allowing each page to have its own personality.
+      </p>
+    </section>
+
+    <section>
+      <h2>Things I Am Still Figuring Out</h2>
+      <ul>
+        <li>How to keep navigation consistent as more assignments are added.</li>
+        <li>Which CSS belongs in the root stylesheet and which CSS should stay page-specific.</li>
+        <li>How to make the site feel connected without making every assignment look exactly the same.</li>
+        <li>How relative paths change when files move into child folders.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Ideas to Revisit</h2>
+      <ul>
+        <li>Experiment with a more personal sketchbook-style homepage.</li>
+        <li>Add screenshots, sketches, or small visual notes to this page.</li>
+        <li>Improve the navigation as the site grows.</li>
+        <li>Keep adding dated reflections instead of deleting older ideas.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
