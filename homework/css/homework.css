@@ -1,0 +1,129 @@
+/* Transform the Night Sky - Advanced CSS Lab */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+  color: white;
+  background: #000;
+  font-family: Arial, sans-serif;
+}
+
+.sky {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(#191970, #333333, #000000);
+}
+
+.circle {
+  background-color: #F6F1D5;
+  position: absolute;
+  border-radius: 50%;
+  width: 24vw;
+  height: 24vw;
+  min-width: 150px;
+  min-height: 150px;
+  max-width: 310px;
+  max-height: 310px;
+  top: 12%;
+  left: 38%;
+  box-shadow: -10px -5px 50px 15px rgba(246, 241, 213, .5);
+  cursor: crosshair;
+  transition-duration: 2s;
+}
+
+#starOne, #starTwo, #starThree, #starFour {
+  position: absolute;
+  cursor: pointer;
+  transition-duration: 1.2s;
+  transition-timing-function: ease-in-out;
+}
+
+#starOne {
+  width: 7%;
+  top: 17%;
+  left: 14%;
+}
+
+#starTwo {
+  width: 6%;
+  top: 23%;
+  right: 15%;
+  transition-duration: 1.5s;
+}
+
+#starThree {
+  width: 8%;
+  bottom: 20%;
+  left: 22%;
+  transition-duration: 1s;
+}
+
+#starFour {
+  width: 5%;
+  bottom: 17%;
+  right: 19%;
+  transition-duration: 2s;
+}
+
+#starOne:hover {
+  transform: scale(1.6) rotate(20deg);
+}
+
+#starTwo:hover {
+  transform: rotate(180deg) scale(1.3);
+}
+
+#starThree:hover {
+  transform: translate(35px, -25px) skew(15deg);
+}
+
+#starFour:hover {
+  transform: rotate(45deg) scale(1.5) translateY(-15px);
+}
+
+.circle:hover {
+  box-shadow: 10px 5px 50px 20px rgba(246, 241, 213, .8);
+}
+
+#start {
+  position: absolute;
+  z-index: 5;
+  bottom: 18px;
+  right: 18px;
+  display: inline-block;
+  padding: 10px 16px;
+  color: white;
+  background: #0000aa;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+#start:hover { color: #0000aa; background: white; }
+
+.reflection {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+  color: #222;
+  background: #f5f3ed;
+  line-height: 1.6;
+}
+
+.reflection h1 { margin-top: 0; font-size: 2rem; }
+.reflection p { font-size: 1rem; }
+
+@media (max-width: 600px) {
+  .circle { width: 34vw; height: 34vw; left: 33%; }
+  #starOne { width: 12%; }
+  #starTwo { width: 10%; }
+  #starThree { width: 13%; }
+  #starFour { width: 9%; }
+}
