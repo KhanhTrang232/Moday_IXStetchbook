@@ -1,1 +1,29 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive night sky demonstrating CSS positioning, transforms, and transitions.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/homework.css">
+  <title>Transform the Night Sky</title>
+</head>
+<body>
+  <main>
+    <section class="sky" aria-label="Interactive night sky">
+      <div class="circle" aria-label="Moon"></div>
+      <img id="starOne" src="img/starOne.svg" alt="Star one">
+      <img id="starTwo" src="img/starTwo.svg" alt="Star two">
+      <img id="starThree" src="img/starThree.svg" alt="Star three">
+      <img id="starFour" src="img/starFour.svg" alt="Star four">
+      <a id="start" href="../index.html">Back to Sketchbook</a>
+    </section>
+    <section class="reflection">
+      <h1>Lab Reflection</h1>
+      <p>In this lab, I used absolute positioning to place the four stars in different areas of the night sky. I used scale, rotate, translate, and skew to create a different hover effect for each star. I also combined more than one transform on some stars, so they could change size, move, and rotate during the same interaction.</p>
+      <p>The transition-duration property made the hover effects happen more smoothly instead of changing suddenly. Absolute positioning gave me more control over where each star appeared, although I had to adjust the positions and sizes so the stars would not overlap with the moon.</p>
+      <p>I also changed the moon's box-shadow on hover to move the glow to the opposite side. After experimenting, I adjusted the star sizes and positions and added responsive sizing for smaller screens. This activity helped me understand how positioning, transforms, and transitions work together in CSS.</p>
+    </section>
+  </main>
+</body>
+</html>
